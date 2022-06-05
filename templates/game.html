@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<h1>Game result</h1>
+<hr>
+
+<p>{{player_1.name}} chose {{player_1.choice}}</p>
+<p>{{player_2.name}} chose {{player_2.choice}}</p>
+<hr>
+
+<h2>And the winner is:</h2>
+{% if result == None %}
+<p>It's is a tie!</p>
+{% else %}
+<p> {{result.name}}</p>
+{% endif %}
+<hr>
+
+<h3><a href="/">Play again</a></h3>
+
+{% endblock content %}

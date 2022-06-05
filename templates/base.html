@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Rock Paper Scissors Game</a></h1>
+    </header>
+    <main>
+        <section>
+            {% block content %}
+                
+            {% endblock content %}
+        </section>
+    </main>
+    <footer>
+        <p><strong>Rock Paper Scissors Game</strong><br>
+        Follow the <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank">link</a> to find more about the game
+        </p>
+    </footer>
+</body>
+
+</html>
