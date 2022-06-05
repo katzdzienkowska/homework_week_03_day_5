@@ -7,12 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <title>Rock Paper Scissors Game</title>
+    <title>{{Title}}Rock Paper Scissors Game</title>
 </head>
 
 <body>
     <header>
-        <h1><a href="/">Rock Paper Scissors Game</a></h1>
+        <h1>Rock Paper Scissors Game</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Game Start</a>
+                </li>
+                <li>
+                    <a href="/play">Play with Computer</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
